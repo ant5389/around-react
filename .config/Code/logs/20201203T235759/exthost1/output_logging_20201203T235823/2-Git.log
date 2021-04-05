@@ -1,0 +1,891 @@
+Looking for git in: git
+Using git 2.20.1 from git
+> git rev-parse --git-dir
+Open repository: /home/ant5389/web_project_1
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :index.html
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git cat-file -s e60b0c3d56f50f49b5de4f2ecd00b1d51f8ce6c0
+> git config --global user.email
+> git config --global user.name
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show -s --format=%an <%ae> [%ai] 63f33b1a42354975a53b4096c30a2dc4e4946592
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z 63f33b1a42354975a53b4096c30a2dc4e4946592
+> git show -s --format=%an <%ae> [%ai] c208c725c9ae764ec580b24f70e11f1428249917
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z c208c725c9ae764ec580b24f70e11f1428249917
+> git show -s --format=%an <%ae> [%ai] bbfcce8bf7c50e4f18c5051f55d6b38aebaeb418
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z bbfcce8bf7c50e4f18c5051f55d6b38aebaeb418
+> git show -s --format=%an <%ae> [%ai] c2cbbf6706ed453b801d5b24a714b79be022d322
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z c2cbbf6706ed453b801d5b24a714b79be022d322
+> git show -s --format=%an <%ae> [%ai] f293718e447fca98f6812943002f9b794ed8ad71
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z f293718e447fca98f6812943002f9b794ed8ad71
+> git show -s --format=%an <%ae> [%ai] 12b0b1a5a0da2b2aff34e2350cf641966fa66252
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z 12b0b1a5a0da2b2aff34e2350cf641966fa66252
+> git show -s --format=%an <%ae> [%ai] c3e15a1f260bf3149ebd9e466b0fb7069e789490
+> git show -s --format=%an <%ae> [%ai] 9ae89dd6d44b89f72fd18c85bad2c2eebc97eb29
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z c3e15a1f260bf3149ebd9e466b0fb7069e789490
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z 9ae89dd6d44b89f72fd18c85bad2c2eebc97eb29
+> git show -s --format=%an <%ae> [%ai] 89b1211264457d40825cd5706d4ba18b99463367
+> git show -s --format=%an <%ae> [%ai] a66cc9fab738d843d959a9bc498c1c2708a3930b
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z 89b1211264457d40825cd5706d4ba18b99463367
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z a66cc9fab738d843d959a9bc498c1c2708a3930b
+> git show -s --format=%an <%ae> [%ai] f608981a59f6848d570df2ddbbe1d74c3f14c54c
+> git show -s --format=%an <%ae> [%ai] 2a05fc3e6712f221bce3a8e3e5cb5a11aa6159bc
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z f608981a59f6848d570df2ddbbe1d74c3f14c54c
+> git show -s --format=%an <%ae> [%ai] 62922e22b12bb38cf0cc31bf59b0e4a3c46a8d26
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z 2a05fc3e6712f221bce3a8e3e5cb5a11aa6159bc
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z 62922e22b12bb38cf0cc31bf59b0e4a3c46a8d26
+> git show -s --format=%an <%ae> [%ai] 8158c2480f3188272a0726fd7e02c29b1ed83ad9
+> git show -s --format=%an <%ae> [%ai] feba4be17fee3c8e7a523216dd36ea9d684181aa
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z 8158c2480f3188272a0726fd7e02c29b1ed83ad9
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z feba4be17fee3c8e7a523216dd36ea9d684181aa
+> git show -s --format=%an <%ae> [%ai] 2c5c1faef43ca417a4d81917d98040df5252d94d
+> git show -s --format=%an <%ae> [%ai] 2a05fc3e6712f221bce3a8e3e5cb5a11aa6159bc
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z 2c5c1faef43ca417a4d81917d98040df5252d94d
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z 2a05fc3e6712f221bce3a8e3e5cb5a11aa6159bc
+> git show -s --format=%an <%ae> [%ai] e347bf1293caddf717253ccdf06ff21f04986a12
+> git show -s --format=%an <%ae> [%ai] 8158c2480f3188272a0726fd7e02c29b1ed83ad9
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z e347bf1293caddf717253ccdf06ff21f04986a12
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z 8158c2480f3188272a0726fd7e02c29b1ed83ad9
+> git show -s --format=%an <%ae> [%ai] 633c564a04a4780be7dcdbe529292d312b5f5566
+> git show -s --format=%an <%ae> [%ai] 2c5c1faef43ca417a4d81917d98040df5252d94d
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z 633c564a04a4780be7dcdbe529292d312b5f5566
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z 2c5c1faef43ca417a4d81917d98040df5252d94d
+> git show -s --format=%an <%ae> [%ai] 5ba526fc65f431f20a6a3de94bc9d7dfbe0729e2
+> git show -s --format=%an <%ae> [%ai] e347bf1293caddf717253ccdf06ff21f04986a12
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z 5ba526fc65f431f20a6a3de94bc9d7dfbe0729e2
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z e347bf1293caddf717253ccdf06ff21f04986a12
+> git show -s --format=%an <%ae> [%ai] da0296e273be14dbfe808aa1152e27191a568891
+> git show -s --format=%an <%ae> [%ai] 633c564a04a4780be7dcdbe529292d312b5f5566
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z da0296e273be14dbfe808aa1152e27191a568891
+> git show -s --format=%an <%ae> [%ai] f13ebd764b9d63ce0390288817bc5bec6d6eebb6
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z 633c564a04a4780be7dcdbe529292d312b5f5566
+> git show -s --format=%an <%ae> [%ai] 5ba526fc65f431f20a6a3de94bc9d7dfbe0729e2
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z f13ebd764b9d63ce0390288817bc5bec6d6eebb6
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z 5ba526fc65f431f20a6a3de94bc9d7dfbe0729e2
+> git show -s --format=%an <%ae> [%ai] 0becc0d09b71c0e815428796640ce58390b1bd98
+> git show -s --format=%an <%ae> [%ai] da0296e273be14dbfe808aa1152e27191a568891
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z 0becc0d09b71c0e815428796640ce58390b1bd98
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z da0296e273be14dbfe808aa1152e27191a568891
+> git show -s --format=%an <%ae> [%ai] 369a9bc47c9c51513a5e681891f9bb017e67d1f8
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z 369a9bc47c9c51513a5e681891f9bb017e67d1f8
+> git show -s --format=%an <%ae> [%ai] f13ebd764b9d63ce0390288817bc5bec6d6eebb6
+> git show -s --format=%an <%ae> [%ai] 2bd60ed881f7bf5a42b34f54332bdad5a5001911
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z f13ebd764b9d63ce0390288817bc5bec6d6eebb6
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z 2bd60ed881f7bf5a42b34f54332bdad5a5001911
+> git show -s --format=%an <%ae> [%ai] 0becc0d09b71c0e815428796640ce58390b1bd98
+> git show -s --format=%an <%ae> [%ai] 991d58253d361f4cd918b00711f0696c8772134f
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z 0becc0d09b71c0e815428796640ce58390b1bd98
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z 991d58253d361f4cd918b00711f0696c8772134f
+> git show -s --format=%an <%ae> [%ai] 369a9bc47c9c51513a5e681891f9bb017e67d1f8
+> git show -s --format=%an <%ae> [%ai] fd3b934e055013a2287f07ccea61c653e28b1ee9
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z 369a9bc47c9c51513a5e681891f9bb017e67d1f8
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z fd3b934e055013a2287f07ccea61c653e28b1ee9
+> git show -s --format=%an <%ae> [%ai] 2bd60ed881f7bf5a42b34f54332bdad5a5001911
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z 2bd60ed881f7bf5a42b34f54332bdad5a5001911
+> git show -s --format=%an <%ae> [%ai] 991d58253d361f4cd918b00711f0696c8772134f
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z 991d58253d361f4cd918b00711f0696c8772134f
+> git show -s --format=%an <%ae> [%ai] fd3b934e055013a2287f07ccea61c653e28b1ee9
+> git show -s --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z fd3b934e055013a2287f07ccea61c653e28b1ee9
+> git show --textconv :pages/index.css
+> git ls-files --stage -- /home/ant5389/web_project_1/pages/index.css
+> git cat-file -s 85df14ce273b991d8b1ae9e85d130617c4836332
+> git show --textconv :index.html
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git cat-file -s e60b0c3d56f50f49b5de4f2ecd00b1d51f8ce6c0
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :blocks/rotation/rotation.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/rotation/rotation.css
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :blocks/header/__square-pic/header__square-pic.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/header/__square-pic/header__square-pic.css
+> git cat-file -s 3fe478946b015758621c68d8d67a1bbfd37289ac
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :blocks/kaufman/__triangle/kaufman__triangle.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/kaufman/__triangle/kaufman__triangle.css
+> git cat-file -s 810b481b61169bc214031815709bb6bafeb39a71
+> git show --textconv :blocks/rotation/rotation.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/rotation/rotation.css
+> git show --textconv :blocks/kaufman/__triangle/kaufman__triangle.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/kaufman/__triangle/kaufman__triangle.css
+> git cat-file -s 810b481b61169bc214031815709bb6bafeb39a71
+> git show --textconv :blocks/rotation/rotation.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/rotation/rotation.css
+> git show --textconv :blocks/kaufman/__triangle/kaufman__triangle.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/kaufman/__triangle/kaufman__triangle.css
+> git cat-file -s 810b481b61169bc214031815709bb6bafeb39a71
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :blocks/rotation/rotation.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/rotation/rotation.css
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :blocks/kaufman/__triangle/kaufman__triangle.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/kaufman/__triangle/kaufman__triangle.css
+> git cat-file -s 810b481b61169bc214031815709bb6bafeb39a71
+> git show --textconv :blocks/rotation/rotation.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/rotation/rotation.css
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :blocks/header/__square-pic/header__square-pic.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/header/__square-pic/header__square-pic.css
+> git cat-file -s 3fe478946b015758621c68d8d67a1bbfd37289ac
+> git show --textconv :blocks/rotation/rotation.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/rotation/rotation.css
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :pages/index.css
+> git ls-files --stage -- /home/ant5389/web_project_1/pages/index.css
+> git cat-file -s 85df14ce273b991d8b1ae9e85d130617c4836332
+> git show --textconv :blocks/rotation/rotation.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/rotation/rotation.css
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :blocks/header/__square-pic/header__square-pic.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/header/__square-pic/header__square-pic.css
+> git cat-file -s 3fe478946b015758621c68d8d67a1bbfd37289ac
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :blocks/kaufman/__triangle/kaufman__triangle.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/kaufman/__triangle/kaufman__triangle.css
+> git cat-file -s 810b481b61169bc214031815709bb6bafeb39a71
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :blocks/rotation/rotation.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/rotation/rotation.css
+> git show --textconv :pages/index.css
+> git ls-files --stage -- /home/ant5389/web_project_1/pages/index.css
+> git cat-file -s 85df14ce273b991d8b1ae9e85d130617c4836332
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :blocks/header/__square-pic/header__square-pic.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/header/__square-pic/header__square-pic.css
+> git cat-file -s 3fe478946b015758621c68d8d67a1bbfd37289ac
+> git show --textconv :blocks/kaufman/__triangle/kaufman__triangle.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/kaufman/__triangle/kaufman__triangle.css
+> git cat-file -s 810b481b61169bc214031815709bb6bafeb39a71
+> git show --textconv :pages/index.css
+> git ls-files --stage -- /home/ant5389/web_project_1/pages/index.css
+> git cat-file -s 85df14ce273b991d8b1ae9e85d130617c4836332
+> git show --textconv :blocks/kaufman/__triangle/kaufman__triangle.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/kaufman/__triangle/kaufman__triangle.css
+> git cat-file -s 810b481b61169bc214031815709bb6bafeb39a71
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :index.html
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git cat-file -s e60b0c3d56f50f49b5de4f2ecd00b1d51f8ce6c0
+> git show --textconv :blocks/rotation/rotation.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/rotation/rotation.css
+> git show --textconv :index.html
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git cat-file -s e60b0c3d56f50f49b5de4f2ecd00b1d51f8ce6c0
+> git show --textconv :pages/index.css
+> git ls-files --stage -- /home/ant5389/web_project_1/pages/index.css
+> git cat-file -s 85df14ce273b991d8b1ae9e85d130617c4836332
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :index.html
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git cat-file -s e60b0c3d56f50f49b5de4f2ecd00b1d51f8ce6c0
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :blocks/video/__iframe/video__iframe.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/video/__iframe/video__iframe.css
+> git cat-file -s 56019436a07cc083536f80637b84f9d2e7a2a4b9
+> git show --textconv :index.html
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git cat-file -s e60b0c3d56f50f49b5de4f2ecd00b1d51f8ce6c0
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :blocks/video/__iframe/video__iframe.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/video/__iframe/video__iframe.css
+> git cat-file -s 56019436a07cc083536f80637b84f9d2e7a2a4b9
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :index.html
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git cat-file -s e60b0c3d56f50f49b5de4f2ecd00b1d51f8ce6c0
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :blocks/kaufman/kaufman.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/kaufman/kaufman.css
+> git cat-file -s e9915400fc0762ccc7d8c8bdf3666401fd05036c
+> git show --textconv :index.html
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git cat-file -s e60b0c3d56f50f49b5de4f2ecd00b1d51f8ce6c0
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :blocks/feynman/__link/feynman__link.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/feynman/__link/feynman__link.css
+> git cat-file -s c297453bce92e88227ebe7fb43dd44d0434911e2
+> git show --textconv :index.html
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git cat-file -s e60b0c3d56f50f49b5de4f2ecd00b1d51f8ce6c0
+> git check-ignore -v -z --stdin
+> git show --textconv :blocks/logo/logo.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/logo/logo.css
+> git cat-file -s 726b86ee1e6c00dcc6ecc51cb31febbea6a18e15
+> git show --textconv :index.html
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git cat-file -s e60b0c3d56f50f49b5de4f2ecd00b1d51f8ce6c0
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :blocks/resources/__logo/resources__logo.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/resources/__logo/resources__logo.css
+> git cat-file -s 0f2ef6532a77561cf56d57f37c6466a523530d07
+> git show --textconv :index.html
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git cat-file -s e60b0c3d56f50f49b5de4f2ecd00b1d51f8ce6c0
+> git show --textconv :blocks/resources/__logo/resources__logo.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/resources/__logo/resources__logo.css
+> git cat-file -s 0f2ef6532a77561cf56d57f37c6466a523530d07
+> git show --textconv :blocks/video/__iframe/video__iframe.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/video/__iframe/video__iframe.css
+> git cat-file -s 56019436a07cc083536f80637b84f9d2e7a2a4b9
+> git show --textconv :blocks/resources/__logo/resources__logo.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/resources/__logo/resources__logo.css
+> git cat-file -s 0f2ef6532a77561cf56d57f37c6466a523530d07
+> git show --textconv :index.html
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git cat-file -s e60b0c3d56f50f49b5de4f2ecd00b1d51f8ce6c0
+> git show --textconv :blocks/resources/__logo/resources__logo.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/resources/__logo/resources__logo.css
+> git cat-file -s 0f2ef6532a77561cf56d57f37c6466a523530d07
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :blocks/feynman/feynman.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/feynman/feynman.css
+> git cat-file -s 58e1e011d2fb5e0c7f89d591f954de5e613f0630
+> git show --textconv :blocks/resources/__logo/resources__logo.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/resources/__logo/resources__logo.css
+> git cat-file -s 0f2ef6532a77561cf56d57f37c6466a523530d07
+> git show --textconv :blocks/feynman/__link/feynman__link.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/feynman/__link/feynman__link.css
+> git cat-file -s c297453bce92e88227ebe7fb43dd44d0434911e2
+> git show --textconv :blocks/resources/__logo/resources__logo.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/resources/__logo/resources__logo.css
+> git cat-file -s 0f2ef6532a77561cf56d57f37c6466a523530d07
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :blocks/kaufman/__triangle/kaufman__triangle.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/kaufman/__triangle/kaufman__triangle.css
+> git cat-file -s 810b481b61169bc214031815709bb6bafeb39a71
+> git show --textconv :blocks/resources/__logo/resources__logo.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/resources/__logo/resources__logo.css
+> git cat-file -s 0f2ef6532a77561cf56d57f37c6466a523530d07
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :index.html
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git cat-file -s e60b0c3d56f50f49b5de4f2ecd00b1d51f8ce6c0
+> git show --textconv :blocks/resources/__logo/resources__logo.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/resources/__logo/resources__logo.css
+> git cat-file -s 0f2ef6532a77561cf56d57f37c6466a523530d07
+> git show --textconv :blocks/kaufman/__triangle/kaufman__triangle.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/kaufman/__triangle/kaufman__triangle.css
+> git cat-file -s 810b481b61169bc214031815709bb6bafeb39a71
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git show --textconv :blocks/resources/__logo/resources__logo.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/resources/__logo/resources__logo.css
+> git config --get commit.template
+> git cat-file -s 0f2ef6532a77561cf56d57f37c6466a523530d07
+> git show --textconv :blocks/kaufman/__triangle/kaufman__triangle.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/kaufman/__triangle/kaufman__triangle.css
+> git cat-file -s 810b481b61169bc214031815709bb6bafeb39a71
+> git show --textconv :blocks/resources/__logo/resources__logo.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/resources/__logo/resources__logo.css
+> git cat-file -s 0f2ef6532a77561cf56d57f37c6466a523530d07
+> git show --textconv :index.html
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git cat-file -s e60b0c3d56f50f49b5de4f2ecd00b1d51f8ce6c0
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :blocks/cards/__description/cards__description.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/cards/__description/cards__description.css
+> git cat-file -s 325ef5816d57534ea623e2431532ab3d4dfd3e6b
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :blocks/cards/__title/cards__title.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/cards/__title/cards__title.css
+> git cat-file -s 7833f737afaa12f74af7de8abf556e6291f5a13e
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :blocks/cards/__item/cards__item.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/cards/__item/cards__item.css
+> git cat-file -s e2b91bb9ecd311c3bb014994e87bc83b18a94c48
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :blocks/footer/__column/footer__column.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/footer/__column/footer__column.css
+> git cat-file -s 10f998481fc57c10c5b5f85efe240228936a249a
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :blocks/footer/__column/_content/footer__column_content_copyright.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/footer/__column/_content/footer__column_content_copyright.css
+> git cat-file -s 178ac0b911e45f79e2de30fc109d4d404e287d2f
+> git show --textconv :blocks/cards/__title/cards__title.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/cards/__title/cards__title.css
+> git cat-file -s 7833f737afaa12f74af7de8abf556e6291f5a13e
+> git show --textconv :blocks/footer/__column/_content/footer__column_content_copyright.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/footer/__column/_content/footer__column_content_copyright.css
+> git cat-file -s 178ac0b911e45f79e2de30fc109d4d404e287d2f
+> git show --textconv :blocks/cards/__description/cards__description.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/cards/__description/cards__description.css
+> git cat-file -s 325ef5816d57534ea623e2431532ab3d4dfd3e6b
+> git show --textconv :blocks/footer/__column/_content/footer__column_content_copyright.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/footer/__column/_content/footer__column_content_copyright.css
+> git cat-file -s 178ac0b911e45f79e2de30fc109d4d404e287d2f
+> git show --textconv :blocks/footer/__column/footer__column.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/footer/__column/footer__column.css
+> git cat-file -s 10f998481fc57c10c5b5f85efe240228936a249a
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :blocks/footer/__column/_content/footer__column_content_copyright.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/footer/__column/_content/footer__column_content_copyright.css
+> git cat-file -s 178ac0b911e45f79e2de30fc109d4d404e287d2f
+> git show --textconv :blocks/footer/__column/footer__column.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/footer/__column/footer__column.css
+> git cat-file -s 10f998481fc57c10c5b5f85efe240228936a249a
+> git show --textconv :blocks/footer/__column/_content/footer__column_content_copyright.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/footer/__column/_content/footer__column_content_copyright.css
+> git cat-file -s 178ac0b911e45f79e2de30fc109d4d404e287d2f
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :blocks/footer/__column/footer__column.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/footer/__column/footer__column.css
+> git cat-file -s 10f998481fc57c10c5b5f85efe240228936a249a
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :blocks/footer/__column/_content/footer__column_content_copyright.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/footer/__column/_content/footer__column_content_copyright.css
+> git cat-file -s 178ac0b911e45f79e2de30fc109d4d404e287d2f
+> git show --textconv :blocks/footer/__column/footer__column.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/footer/__column/footer__column.css
+> git cat-file -s 10f998481fc57c10c5b5f85efe240228936a249a
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :blocks/footer/__column/_content/footer__column_content_copyright.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/footer/__column/_content/footer__column_content_copyright.css
+> git cat-file -s 178ac0b911e45f79e2de30fc109d4d404e287d2f
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :blocks/footer/__column/footer__column.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/footer/__column/footer__column.css
+> git cat-file -s 10f998481fc57c10c5b5f85efe240228936a249a
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :blocks/footer/__column/_content/footer__column_content_copyright.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/footer/__column/_content/footer__column_content_copyright.css
+> git cat-file -s 178ac0b911e45f79e2de30fc109d4d404e287d2f
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :blocks/footer/__column/footer__column.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/footer/__column/footer__column.css
+> git cat-file -s 10f998481fc57c10c5b5f85efe240228936a249a
+> git show --textconv :blocks/footer/__column/_content/footer__column_content_copyright.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/footer/__column/_content/footer__column_content_copyright.css
+> git cat-file -s 178ac0b911e45f79e2de30fc109d4d404e287d2f
+> git show --textconv :index.html
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git cat-file -s e60b0c3d56f50f49b5de4f2ecd00b1d51f8ce6c0
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :blocks/khan/__book-pic/khan__book-pic.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/khan/__book-pic/khan__book-pic.css
+> git cat-file -s a9aeb00aa069de5a9539597393eb386344d029ac
+> git check-ignore -v -z --stdin
+> git show --textconv :blocks/khan/__book-container/khan__book-container.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/khan/__book-container/khan__book-container.css
+> git cat-file -s 56bea17981779034b5feeb7ea6064ab47c2bfd3a
+> git show --textconv :blocks/khan/__book-pic/khan__book-pic.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/khan/__book-pic/khan__book-pic.css
+> git cat-file -s a9aeb00aa069de5a9539597393eb386344d029ac
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :blocks/section-title/section-title.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/section-title/section-title.css
+> git cat-file -s 4ad51314fa00dcefaa87a707fc0eb7acb72368f3
+> git check-ignore -v -z --stdin
+> git show --textconv :blocks/section-title/_theme/section-title_theme_dark.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/section-title/_theme/section-title_theme_dark.css
+> git cat-file -s 678a09fd5084dfb33fae94cfe3e1b812ee8018cf
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :blocks/section-subtitle/_theme/section-subtitle_theme_dark.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/section-subtitle/_theme/section-subtitle_theme_dark.css
+> git cat-file -s bb07101bd5b12c02903e8a75fa2854d3169249dc
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :blocks/section-subtitle/section-subtitle.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/section-subtitle/section-subtitle.css
+> git cat-file -s cf0b1252f65c7fe44228fb5e610874b3bf5a3aa7
+> git show --textconv :blocks/section-subtitle/_theme/section-subtitle_theme_dark.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/section-subtitle/_theme/section-subtitle_theme_dark.css
+> git cat-file -s bb07101bd5b12c02903e8a75fa2854d3169249dc
+> git show --textconv :blocks/section-subtitle/section-subtitle.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/section-subtitle/section-subtitle.css
+> git cat-file -s cf0b1252f65c7fe44228fb5e610874b3bf5a3aa7
+> git show --textconv :blocks/section-title/_theme/section-title_theme_dark.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/section-title/_theme/section-title_theme_dark.css
+> git cat-file -s 678a09fd5084dfb33fae94cfe3e1b812ee8018cf
+> git show --textconv :blocks/khan/__book-pic/khan__book-pic.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/khan/__book-pic/khan__book-pic.css
+> git cat-file -s a9aeb00aa069de5a9539597393eb386344d029ac
+> git show --textconv :blocks/khan/__book-container/khan__book-container.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/khan/__book-container/khan__book-container.css
+> git cat-file -s 56bea17981779034b5feeb7ea6064ab47c2bfd3a
+> git show --textconv :index.html
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git cat-file -s e60b0c3d56f50f49b5de4f2ecd00b1d51f8ce6c0
+> git check-ignore -v -z --stdin
+> git show --textconv :blocks/video/__iframes/video__iframes.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/video/__iframes/video__iframes.css
+> git cat-file -s 40bb59b659c26882f4f517c1fffc471766a8618e
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :index.html
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git cat-file -s e60b0c3d56f50f49b5de4f2ecd00b1d51f8ce6c0
+> git show --textconv :blocks/video/__iframe/video__iframe.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/video/__iframe/video__iframe.css
+> git cat-file -s 56019436a07cc083536f80637b84f9d2e7a2a4b9
+> git show --textconv :blocks/video/__iframes/video__iframes.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/video/__iframes/video__iframes.css
+> git cat-file -s 40bb59b659c26882f4f517c1fffc471766a8618e
+> git show --textconv :blocks/video/__iframe/video__iframe.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/video/__iframe/video__iframe.css
+> git cat-file -s 56019436a07cc083536f80637b84f9d2e7a2a4b9
+> git show --textconv :blocks/cards/__description/cards__description.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/cards/__description/cards__description.css
+> git cat-file -s 325ef5816d57534ea623e2431532ab3d4dfd3e6b
+> git show --textconv :blocks/video/__iframes/video__iframes.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/video/__iframes/video__iframes.css
+> git cat-file -s 40bb59b659c26882f4f517c1fffc471766a8618e
+> git show --textconv :blocks/video/__iframe/video__iframe.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/video/__iframe/video__iframe.css
+> git cat-file -s 56019436a07cc083536f80637b84f9d2e7a2a4b9
+> git show --textconv :blocks/video/video.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/video/video.css
+> git cat-file -s 667a1a4995b578124082ce345d28d0ef9bced27a
+> git show --textconv :blocks/video/__iframe/video__iframe.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/video/__iframe/video__iframe.css
+> git cat-file -s 56019436a07cc083536f80637b84f9d2e7a2a4b9
+> git show --textconv :blocks/video/__iframes/video__iframes.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/video/__iframes/video__iframes.css
+> git cat-file -s 40bb59b659c26882f4f517c1fffc471766a8618e
+> git show --textconv :blocks/video/__iframe/video__iframe.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/video/__iframe/video__iframe.css
+> git cat-file -s 56019436a07cc083536f80637b84f9d2e7a2a4b9
+> git show --textconv :index.html
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git cat-file -s e60b0c3d56f50f49b5de4f2ecd00b1d51f8ce6c0
+> git show --textconv :blocks/cards/__title/cards__title.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/cards/__title/cards__title.css
+> git cat-file -s 7833f737afaa12f74af7de8abf556e6291f5a13e
+> git show --textconv :blocks/khan/__book-container/khan__book-container.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/khan/__book-container/khan__book-container.css
+> git cat-file -s 56bea17981779034b5feeb7ea6064ab47c2bfd3a
+> git show --textconv :index.html
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git cat-file -s e60b0c3d56f50f49b5de4f2ecd00b1d51f8ce6c0
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :pages/index.css
+> git ls-files --stage -- /home/ant5389/web_project_1/pages/index.css
+> git cat-file -s 85df14ce273b991d8b1ae9e85d130617c4836332
+> git show --textconv :index.html
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git cat-file -s e60b0c3d56f50f49b5de4f2ecd00b1d51f8ce6c0
+> git check-ignore -v -z --stdin
+> git show --textconv :blocks/khan/__buy-link/khan__buy-link.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/khan/__buy-link/khan__buy-link.css
+> git cat-file -s 86e5ee621643fce98db6d3214ace61c6ab661b52
+> git show --textconv :blocks/khan/khan.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/khan/khan.css
+> git cat-file -s bfa8de03fceb193d96141470fd64b28e32d6d0bb
+> git show --textconv :blocks/khan/__book-container/khan__book-container.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/khan/__book-container/khan__book-container.css
+> git cat-file -s 56bea17981779034b5feeb7ea6064ab47c2bfd3a
+> git show --textconv :index.html
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git cat-file -s e60b0c3d56f50f49b5de4f2ecd00b1d51f8ce6c0
+> git show --textconv :blocks/khan/__book-container/khan__book-container.css
+> git ls-files --stage -- /home/ant5389/web_project_1/blocks/khan/__book-container/khan__book-container.css
+> git cat-file -s 56bea17981779034b5feeb7ea6064ab47c2bfd3a
+> git show --textconv :index.html
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git cat-file -s e60b0c3d56f50f49b5de4f2ecd00b1d51f8ce6c0
+> git add -A -- .
+> git commit --quiet --allow-empty-message --file -
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git cat-file -s 39b8f31679f6f655229c3f055c6b2d56eb1b2d72
+> git show --textconv :index.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git ls-files --stage -- /home/ant5389/web_project_1/index.html
+> git symbolic-ref --short HEAD
+> git cat-file -s 39b8f31679f6f655229c3f055c6b2d56eb1b2d72
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git show --textconv :index.html
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template

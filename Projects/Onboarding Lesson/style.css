@@ -1,0 +1,85 @@
+body, h1, h2, h3, h4, p, a {
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial Black", sans-serif;
+}
+
+.header {
+  height: 100vh;
+  background-color: #eee;
+  background-image: url(https://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_03_hd_picture_169784.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 100px;
+  color: rgb(224, 224, 224);
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: auto;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .2);
+  display: flex;
+}
+
+.content {
+  font-size: 0;
+  width: 790px;
+  margin: 100px auto 50px;
+}
+
+.card {
+  width: 350px;
+  margin-bottom: 60px;
+  padding: 45px 45px 70px;
+  display: inline-block;
+  margin-right: 90px;
+  box-shadow: 4px 4px 7px rgba(32, 41, 126, 0.5);
+}
+
+.no-right-margin {
+  margin-right: 0;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 15px;
+  text-align: center;
+}
+
+.card-image {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.footer {
+  height: 300px;
+  background-color: rgb(7, 20, 56);
+  display: flex;
+}
+
+.footer-author {
+  color: #fff;
+  font-size: 24px;
+  margin: auto;
+}
