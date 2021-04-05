@@ -1,8 +1,0 @@
-[2020-11-29 21:37:54.313] [sharedprocess] [info] main {"machineId":"bfa6c9151b350276b66f2522bc40bc5412f3bd31db6bbf911bc4f0d89700bb15","windowId":2}
-[2020-11-29 21:38:00.048] [sharedprocess] [info] Installing extension: editorconfig.editorconfig
-[2020-11-29 21:38:00.785] [sharedprocess] [info] Downloaded extension: editorconfig.editorconfig undefined
-[2020-11-29 21:38:01.772] [sharedprocess] [info] Extracted extension to /home/ant5389/.vscode/extensions/.editorconfig.editorconfig-0.16.3: editorconfig.editorconfig
-[2020-11-29 21:38:01.775] [sharedprocess] [info] Renamed to /home/ant5389/.vscode/extensions/editorconfig.editorconfig-0.16.3
-[2020-11-29 21:38:01.779] [sharedprocess] [info] Installation completed. editorconfig.editorconfig
-[2020-11-29 21:38:01.806] [sharedprocess] [info] Extensions installed successfully: editorconfig.editorconfig
-[2020-11-29 21:38:34.358] [sharedprocess] [info] Starting to clean up unused language packs.
