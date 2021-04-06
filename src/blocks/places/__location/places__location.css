@@ -1,0 +1,14 @@
+.places__location {
+    color: #000;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 900;
+    margin: 25px 0 0 21px;
+    padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    display: inline-block;
+    width: 210px;
+}
