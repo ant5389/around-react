@@ -2,21 +2,33 @@ import editImg from '../images/edit.svg';
 import addPicImg from '../images/add.svg';
 
 function Main() {
+    function handleEditAvatarClick() {
+        document.querySelector('.popup_type_avatar').classList.add('popup_opened');
+    }
+
+    function handleEditProfileClick() {
+        document.querySelector('.popup_type_edit-profile').classList.add('popup_opened');
+    }
+
+    function handleAddPlaceClick() {
+        document.querySelector('.popup_type_addcard').classList.add('popup_opened')
+    }
+
     return (
       <main className="content">
         <section className="profile">
-            <button type="button" className="profile__avatar-container">
+            <button onClick={handleEditAvatarClick} type="button" className="profile__avatar-container">
                 <img className="profile__avatar" src="//:0" alt="Avatar Pic" />
                 <img className="profile__avatar-btn" src={editImg} alt="Edit Avatar" />
             </button>
             <div className="profile__profile-info">
                 <h1 className="profile__name">Cousteau</h1>
-                <button type="button" className="profile__edit-box">
+                <button onClick={handleEditProfileClick} type="button" className="profile__edit-box">
                     <img className="profile__edit-btn" src={editImg} alt="Edit Icon" />
                 </button>
                 <p className="profile__subtitle">Explorer</p>
             </div>
-            <button type="button" className="profile__add-pic">
+            <button onClick={handleAddPlaceClick} type="button" className="profile__add-pic">
                 <img className="profile__add-btn" src={addPicImg} alt="Add Picture Icon" />
             </button>
         </section>

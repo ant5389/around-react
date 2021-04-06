@@ -1,6 +1,8 @@
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
+import ImagePopup from './ImagePopup';
+import PopupWithForm from './PopupWithForm';
 
 function App() {
     return ( 
@@ -8,7 +10,7 @@ function App() {
       <Header />
       <Main />
       <Footer />
-      <div className="popup popup_type_avatar">
+      {/* <div className="popup popup_type_avatar">
         <div className="popup__background popup__background_type_avatar"></div>
         <form className="popup__container popup__container_type_avatar">
             <button type="button" className="popup__close"></button>
@@ -18,9 +20,9 @@ function App() {
 
             <button type="submit" className="popup__save">Save</button>
         </form>
-      </div>
-      <div className="popup popup_type_edit-profile">
-        <div className="popup__background popup__background_type_profile"></div>
+      </div> */}
+      {/* <div className="popup popup_type_edit-profile">
+        <div className="popup__background popup__background_type_edit-profile"></div>
         <form className="popup__container">
             <button type="button" className="popup__close"></button>
             <h2 className="popup__title">Edit Profile</h2>
@@ -32,8 +34,8 @@ function App() {
 
             <button type="submit" className="popup__save">Save</button>
         </form>
-      </div>
-      <div className="popup popup_type_addcard">
+      </div> */}
+      {/* <div className="popup popup_type_addcard">
         <div className="popup__background popup__background_type_addcard"></div>
         <form className="popup__container popup__container_type_addcard">
             <button type="button" className="popup__close popup__close_type_addcard"></button>
@@ -46,17 +48,7 @@ function App() {
 
             <button type="submit" className="popup__save popup__save_type_addcard">Create</button>
         </form>
-      </div>
-      <div className="popup popup_type_image">
-        <div className="popup__background popup__background_type_image"></div>
-        <div className="popup__container popup__container_type_image">
-            <figure className="popup__figure">
-                <button type="button" className="popup__close"></button>
-                <img className="popup__image" src="//:0" alt="#" />
-                <figcaption className="popup__image-title"></figcaption>
-            </figure>
-        </div>
-      </div>
+      </div> */}
       <div className="popup popup_type_remove-card">
         <div className="popup__background popup__background_type_remove-card"></div>
         <form className="popup__container popup__container_type_remove-card">
@@ -65,6 +57,27 @@ function App() {
             <button type="button" className="popup__save popup__save_type_remove-card">Yes</button>
         </form>
       </div>
+      <PopupWithForm title='Change profile picture' name='avatar' />
+      <PopupWithForm 
+        title='Edit profile' 
+        name='edit-profile' 
+        idName='nameInput' 
+        idSubtitle='subtitleInput'
+        placeholderName='Name'
+        placeholderSubtitle='About'
+        submitName='Save'
+      />
+      <PopupWithForm 
+        title='New Place' 
+        name='addcard' 
+        idName='titleInput' 
+        idSubtitle='linkInput'
+        placeholderName='Title'
+        placeholderSubtitle='Image Link'
+        submitName='Create'
+      />
+      {/* <PopupWithForm title='' name='remove-card' /> */}
+      <ImagePopup />
     </div>
     );
 }
