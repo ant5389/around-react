@@ -1,19 +1,7 @@
 import editImg from '../images/edit.svg';
 import addPicImg from '../images/add.svg';
 
-function Main() {
-    function handleEditAvatarClick() {
-        document.querySelector('.popup_type_avatar').classList.add('popup_opened');
-    }
-
-    function handleEditProfileClick() {
-        document.querySelector('.popup_type_edit-profile').classList.add('popup_opened');
-    }
-
-    function handleAddPlaceClick() {
-        document.querySelector('.popup_type_addcard').classList.add('popup_opened')
-    }
-
+function Main({ handleAddPlaceClick, handleEditAvatarClick, handleEditProfileClick }) {
     return (
       <main className="content">
         <section className="profile">

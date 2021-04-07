@@ -1,64 +1,36 @@
+import React from 'react';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
 import ImagePopup from './ImagePopup';
 import PopupWithForm from './PopupWithForm';
+import AvatarPopup from './AvatarPopup';
+import RemoveCardPopup from './RemoveCardPopup';
 
 function App() {
-    return ( 
+
+  const [onEditProfile, isEditProfilePopupOpen] = React.useState(false);
+  const [onAddPlace, isAddPlacePopupOpen] = React.useState(false);
+  const [onEditAvatar, isEditAvatarPopupOpen] = React.useState(false);
+  const [onRemoveCard, isRemoveCardPopupOpen] = React.useState(false);
+  const [onImageOpen, isImageOpenPopupOpen] = React.useState(false);
+  
+  return (
     <div className="page">
       <Header />
-      <Main />
+      <Main
+        handleEditAvatarClick={() => isEditAvatarPopupOpen(true)}
+        handleAddPlaceClick={() => isAddPlacePopupOpen(true)}
+        handleEditProfileClick={() => isEditProfilePopupOpen(true)}
+      />
       <Footer />
-      {/* <div className="popup popup_type_avatar">
-        <div className="popup__background popup__background_type_avatar"></div>
-        <form className="popup__container popup__container_type_avatar">
-            <button type="button" className="popup__close"></button>
-            <h2 className="popup__title">Change profile picture</h2>
-            <input id="avatarInput" type="url" className="popup__field popup__field_type_avatar" placeholder="Image link" name="link" required />
-            <span id="avatarInput-error" className="popup__error"></span>
-
-            <button type="submit" className="popup__save">Save</button>
-        </form>
-      </div> */}
-      {/* <div className="popup popup_type_edit-profile">
-        <div className="popup__background popup__background_type_edit-profile"></div>
-        <form className="popup__container">
-            <button type="button" className="popup__close"></button>
-            <h2 className="popup__title">Edit Profile</h2>
-            <input id="nameInput" type="text" className="popup__field" placeholder="Name" name="name" minlength="2" maxlength="40" required />
-            <span id="nameInput-error" className="popup__error"></span>
-
-            <input id="subtitleInput" type="text" className="popup__field" placeholder="About" name="subtitle" minlength="2" maxlength="200" required />
-            <span id="subtitleInput-error" className="popup__error"></span>
-
-            <button type="submit" className="popup__save">Save</button>
-        </form>
-      </div> */}
-      {/* <div className="popup popup_type_addcard">
-        <div className="popup__background popup__background_type_addcard"></div>
-        <form className="popup__container popup__container_type_addcard">
-            <button type="button" className="popup__close popup__close_type_addcard"></button>
-            <h2 className="popup__title popup__title_type_addcard">New place</h2>
-            <input id="titleInput" type="text" className="popup__field popup__field_type_addcard" placeholder="Title" name="name" minlength="1" maxlength="30" required />
-            <span id="titleInput-error" className="popup__error"></span>
-
-            <input id="linkInput" type="url" className="popup__field popup__field_type_addcard" placeholder="Image link" name="link" required />
-            <span id="linkInput-error" className="popup__error"></span>
-
-            <button type="submit" className="popup__save popup__save_type_addcard">Create</button>
-        </form>
-      </div> */}
-      <div className="popup popup_type_remove-card">
-        <div className="popup__background popup__background_type_remove-card"></div>
-        <form className="popup__container popup__container_type_remove-card">
-            <button type="button" className="popup__close"></button>
-            <h2 className="popup__title">Are you sure?</h2>
-            <button type="button" className="popup__save popup__save_type_remove-card">Yes</button>
-        </form>
-      </div>
-      <PopupWithForm title='Change profile picture' name='avatar' />
-      <PopupWithForm 
+      <AvatarPopup
+        isOpen={onEditAvatar}
+        onClose={() => isEditAvatarPopupOpen(false)}
+      />
+      <PopupWithForm
+        isOpen={onEditProfile}
+        onClose={() => isEditProfilePopupOpen(false)}
         title='Edit profile' 
         name='edit-profile' 
         idName='nameInput' 
@@ -66,18 +38,34 @@ function App() {
         placeholderName='Name'
         placeholderSubtitle='About'
         submitName='Save'
+        minlengthName='2'
+        maxlengthName='40'
+        minlengthSubtitle='2'
+        maxlengthSubtitle='200'
       />
-      <PopupWithForm 
-        title='New Place' 
-        name='addcard' 
-        idName='titleInput' 
+      <PopupWithForm
+        isOpen={onAddPlace}
+        onClose={() => isAddPlacePopupOpen(false)}
+        title='New Place'
+        name='addcard'
+        idName='titleInput'
         idSubtitle='linkInput'
         placeholderName='Title'
         placeholderSubtitle='Image Link'
         submitName='Create'
+        minlengthName='1'
+        maxlengthName='30'
+        minlengthSubtitle=''
+        maxlengthSubtitle=''
       />
-      {/* <PopupWithForm title='' name='remove-card' /> */}
-      <ImagePopup />
+      <ImagePopup
+        isOpen={onImageOpen}
+        onClose={() => isImageOpenPopupOpen(false)}
+      />
+      <RemoveCardPopup
+        isOpen={onRemoveCard}
+        onClose={() => isRemoveCardPopupOpen(false)}
+      />
     </div>
     );
 }
