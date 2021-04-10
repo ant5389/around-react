@@ -6,31 +6,43 @@ import ImagePopup from './ImagePopup';
 import PopupWithForm from './PopupWithForm';
 import AvatarPopup from './AvatarPopup';
 import RemoveCardPopup from './RemoveCardPopup';
+import { useUserInfo, useCards } from '../utils/utils';
 
 function App() {
 
-  const [onEditProfile, isEditProfilePopupOpen] = React.useState(false);
-  const [onAddPlace, isAddPlacePopupOpen] = React.useState(false);
-  const [onEditAvatar, isEditAvatarPopupOpen] = React.useState(false);
-  const [onRemoveCard, isRemoveCardPopupOpen] = React.useState(false);
-  const [onImageOpen, isImageOpenPopupOpen] = React.useState(false);
+  const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = React.useState(false);
+  const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = React.useState(false);
+  const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = React.useState(false);
+  const [isRemoveCardPopupOpen, setIsRemoveCardPopupOpen] = React.useState(false);
+  const [isImageOpen, setIsImageOpen] = React.useState(false);
+  const [selectedCard, setSelectedCard] = React.useState({});
+  const [userInfo, setUserInfo] = useUserInfo();
+  const [cards, setCards] = useCards();
+
+  function handleCardClick(card) {
+    setSelectedCard(card);
+    setIsImageOpen(true);
+  };
   
   return (
     <div className="page">
       <Header />
       <Main
-        handleEditAvatarClick={() => isEditAvatarPopupOpen(true)}
-        handleAddPlaceClick={() => isAddPlacePopupOpen(true)}
-        handleEditProfileClick={() => isEditProfilePopupOpen(true)}
+        cards={cards}
+        userInfo={userInfo}
+        handleCardClick={handleCardClick}
+        handleEditAvatarClick={() => setIsEditAvatarPopupOpen(true)}
+        handleAddPlaceClick={() => setIsAddPlacePopupOpen(true)}
+        handleEditProfileClick={() => setIsEditProfilePopupOpen(true)}
       />
       <Footer />
       <AvatarPopup
-        isOpen={onEditAvatar}
-        onClose={() => isEditAvatarPopupOpen(false)}
+        isOpen={isEditAvatarPopupOpen}
+        onClose={() => setIsEditAvatarPopupOpen(false)}
       />
       <PopupWithForm
-        isOpen={onEditProfile}
-        onClose={() => isEditProfilePopupOpen(false)}
+        isOpen={isEditProfilePopupOpen}
+        onClose={() => setIsEditProfilePopupOpen(false)}
         title='Edit profile' 
         name='edit-profile' 
         idName='nameInput' 
@@ -44,8 +56,8 @@ function App() {
         maxlengthSubtitle='200'
       />
       <PopupWithForm
-        isOpen={onAddPlace}
-        onClose={() => isAddPlacePopupOpen(false)}
+        isOpen={isAddPlacePopupOpen}
+        onClose={() => setIsAddPlacePopupOpen(false)}
         title='New Place'
         name='addcard'
         idName='titleInput'
@@ -59,12 +71,13 @@ function App() {
         maxlengthSubtitle=''
       />
       <ImagePopup
-        isOpen={onImageOpen}
-        onClose={() => isImageOpenPopupOpen(false)}
+        isOpen={isImageOpen}
+        onClose={() => setIsImageOpen(false)}
+        card={selectedCard}
       />
       <RemoveCardPopup
-        isOpen={onRemoveCard}
-        onClose={() => isRemoveCardPopupOpen(false)}
+        isOpen={isRemoveCardPopupOpen}
+        onClose={() => setIsRemoveCardPopupOpen(false)}
       />
     </div>
     );
