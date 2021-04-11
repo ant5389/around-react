@@ -3,9 +3,10 @@ import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
 import ImagePopup from './ImagePopup';
-import PopupWithForm from './PopupWithForm';
 import AvatarPopup from './AvatarPopup';
 import RemoveCardPopup from './RemoveCardPopup';
+import EditProfilePopup from './EditProfilePopup';
+import AddCardPopup from './AddCardPopup';
 import { useUserInfo, useCards } from '../utils/utils';
 
 function App() {
@@ -40,35 +41,13 @@ function App() {
         isOpen={isEditAvatarPopupOpen}
         onClose={() => setIsEditAvatarPopupOpen(false)}
       />
-      <PopupWithForm
+      <EditProfilePopup
         isOpen={isEditProfilePopupOpen}
         onClose={() => setIsEditProfilePopupOpen(false)}
-        title='Edit profile' 
-        name='edit-profile' 
-        idName='nameInput' 
-        idSubtitle='subtitleInput'
-        placeholderName='Name'
-        placeholderSubtitle='About'
-        submitName='Save'
-        minlengthName='2'
-        maxlengthName='40'
-        minlengthSubtitle='2'
-        maxlengthSubtitle='200'
       />
-      <PopupWithForm
+      <AddCardPopup
         isOpen={isAddPlacePopupOpen}
         onClose={() => setIsAddPlacePopupOpen(false)}
-        title='New Place'
-        name='addcard'
-        idName='titleInput'
-        idSubtitle='linkInput'
-        placeholderName='Title'
-        placeholderSubtitle='Image Link'
-        submitName='Create'
-        minlengthName='1'
-        maxlengthName='30'
-        minlengthSubtitle=''
-        maxlengthSubtitle=''
       />
       <ImagePopup
         isOpen={isImageOpen}
