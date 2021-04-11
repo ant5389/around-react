@@ -1,3 +1,10 @@
+const handleResponse = (res) => {
+    if (!res.ok) {
+        return Promise.reject(`Error: ${res.status}`);
+    }
+    return res.json();
+}
+
 class Api {
     constructor({ baseUrl, headers }) {
         this._baseUrl = baseUrl;
@@ -8,14 +15,14 @@ class Api {
         return fetch(this._baseUrl + '/cards', {
                 headers: this._headers
             })
-            .then(res => res.ok ? res.json() : Promise.reject(new Error('Error:' + res.statusText)))
+            .then(handleResponse)
     }
 
     getUserInfo() {
         return fetch(this._baseUrl + '/users/me', {
                 headers: this._headers
             })
-            .then(res => res.ok ? res.json() : Promise.reject('Error:' + res.statusText))
+            .then(handleResponse)
     }
 
     addCard({ name, link }) {
@@ -24,7 +31,7 @@ class Api {
                 method: "POST",
                 body: JSON.stringify({ name, link })
             })
-            .then(res => res.ok ? res.json() : Promise.reject('Error:' + res.statusText))
+            .then(handleResponse)
     }
 
     removeCard(cardID) {
@@ -32,7 +39,7 @@ class Api {
                 headers: this._headers,
                 method: "DELETE"
             })
-            .then(res => res.ok ? res.json() : Promise.reject('Error:' + res.statusText))
+            .then(handleResponse)
     }
 
     addLikeCard(cardID) {
@@ -40,7 +47,7 @@ class Api {
                 headers: this._headers,
                 method: "PUT"
             })
-            .then(res => res.ok ? res.json() : Promise.reject('Error:' + res.statusText))
+            .then(handleResponse)
     }
 
     removeLikeCard(cardID) {
@@ -48,7 +55,7 @@ class Api {
                 headers: this._headers,
                 method: "DELETE"
             })
-            .then(res => res.ok ? res.json() : Promise.reject('Error:' + res.statusText))
+            .then(handleResponse)
     }
 
     setUserInfo({ name, about }) {
@@ -57,7 +64,7 @@ class Api {
                 method: "PATCH",
                 body: JSON.stringify({ name, about })
             })
-            .then(res => res.ok ? res.json() : Promise.reject('Error:' + res.statusText))
+            .then(handleResponse)
     }
 
     setUserAvatar({ avatar }) {
@@ -66,7 +73,7 @@ class Api {
                 method: "PATCH",
                 body: JSON.stringify({ avatar })
             })
-            .then(res => res.ok ? res.json() : Promise.reject('Error:' + res.statusText))
+            .then(handleResponse)
     }
 };
 
