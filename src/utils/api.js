@@ -42,21 +42,29 @@ class Api {
             .then(handleResponse)
     }
 
-    addLikeCard(cardID) {
+    changeLikeCardStatus(cardID, isLiked) {
         return fetch(this._baseUrl + '/cards/likes/' + cardID, {
                 headers: this._headers,
-                method: "PUT"
+                method: `${!isLiked ? "PUT" : "DELETE"}`
             })
             .then(handleResponse)
     }
 
-    removeLikeCard(cardID) {
-        return fetch(this._baseUrl + '/cards/likes/' + cardID, {
-                headers: this._headers,
-                method: "DELETE"
-            })
-            .then(handleResponse)
-    }
+    // addLikeCard(cardID) {
+    //     return fetch(this._baseUrl + '/cards/likes/' + cardID, {
+    //             headers: this._headers,
+    //             method: "PUT"
+    //         })
+    //         .then(handleResponse)
+    // }
+
+    // removeLikeCard(cardID) {
+    //     return fetch(this._baseUrl + '/cards/likes/' + cardID, {
+    //             headers: this._headers,
+    //             method: "DELETE"
+    //         })
+    //         .then(handleResponse)
+    // }
 
     setUserInfo({ name, about }) {
         return fetch(this._baseUrl + '/users/me', {

@@ -1,9 +1,26 @@
 import React from 'react';
+import { CurrentUserContext } from '../contexts/CurrentUserContext';
 import editImg from '../images/edit.svg';
 import addPicImg from '../images/add.svg';
 import Card from './Card';
+// import { api } from '../utils/api';
 
-function Main({ cards, userInfo, handleAddPlaceClick, handleEditAvatarClick, handleEditProfileClick, handleCardClick }) {
+function Main({ cards, handleAddPlaceClick, handleEditAvatarClick, handleEditProfileClick, handleCardClick }) {
+    const [userInfo] = React.useContext(CurrentUserContext);
+
+    function handleCardLike(card) {
+        const isLiked = card.likes.some(i => i._id === userInfo._id);
+        
+        // api.changeLikeCardStatus(card._id, !isLiked).then((newCard) => {
+        //     setCards((state) => state.map((c) => c._id === card._id ? newCard : c));
+        // });
+    }
+
+    // function handleCardDelete(card) {
+    //     api.removeCard(card._id).then((newCard) => {
+    //         setCards((state) => state.map((c) ))
+    //     })
+    // }
 
     return (
       <main className="content">
@@ -26,10 +43,12 @@ function Main({ cards, userInfo, handleAddPlaceClick, handleEditAvatarClick, han
         <section className="places" id="places">
             <ul className="places__list">
                 {cards.map(card => {
-                    return <Card 
+                    return <Card
                         card={card} 
                         key={card._id}
                         handleCardClick={handleCardClick}
+                        onCardLike={handleCardLike}
+                        // onCardDelete={handleCardDelete}
                     />
                 })}
             </ul>
