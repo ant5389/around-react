@@ -1,4 +1,5 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
@@ -28,36 +29,40 @@ function App() {
   return (
     <div className="page">
       <Header />
-      <Main
-        cards={cards}
-        userInfo={userInfo}
-        handleCardClick={handleCardClick}
-        handleEditAvatarClick={() => setIsEditAvatarPopupOpen(true)}
-        handleAddPlaceClick={() => setIsAddPlacePopupOpen(true)}
-        handleEditProfileClick={() => setIsEditProfilePopupOpen(true)}
-      />
+      <Switch>
+        <Route path='/' exact>
+          <Main
+            cards={cards}
+            userInfo={userInfo}
+            handleCardClick={handleCardClick}
+            handleEditAvatarClick={() => setIsEditAvatarPopupOpen(true)}
+            handleAddPlaceClick={() => setIsAddPlacePopupOpen(true)}
+            handleEditProfileClick={() => setIsEditProfilePopupOpen(true)}
+          />
+        <AvatarPopup
+          isOpen={isEditAvatarPopupOpen}
+          onClose={() => setIsEditAvatarPopupOpen(false)}
+        />
+        <EditProfilePopup
+          isOpen={isEditProfilePopupOpen}
+          onClose={() => setIsEditProfilePopupOpen(false)}
+        />
+        <AddCardPopup
+          isOpen={isAddPlacePopupOpen}
+          onClose={() => setIsAddPlacePopupOpen(false)}
+        />
+        <ImagePopup
+          isOpen={isImageOpen}
+          onClose={() => setIsImageOpen(false)}
+          card={selectedCard}
+        />
+        <RemoveCardPopup
+          isOpen={isRemoveCardPopupOpen}
+          onClose={() => setIsRemoveCardPopupOpen(false)}
+        />
+        </Route>
+      </Switch>
       <Footer />
-      <AvatarPopup
-        isOpen={isEditAvatarPopupOpen}
-        onClose={() => setIsEditAvatarPopupOpen(false)}
-      />
-      <EditProfilePopup
-        isOpen={isEditProfilePopupOpen}
-        onClose={() => setIsEditProfilePopupOpen(false)}
-      />
-      <AddCardPopup
-        isOpen={isAddPlacePopupOpen}
-        onClose={() => setIsAddPlacePopupOpen(false)}
-      />
-      <ImagePopup
-        isOpen={isImageOpen}
-        onClose={() => setIsImageOpen(false)}
-        card={selectedCard}
-      />
-      <RemoveCardPopup
-        isOpen={isRemoveCardPopupOpen}
-        onClose={() => setIsRemoveCardPopupOpen(false)}
-      />
     </div>
     );
 }
