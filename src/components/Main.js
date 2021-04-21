@@ -4,7 +4,7 @@ import editImg from '../images/edit.svg';
 import addPicImg from '../images/add.svg';
 import Card from './Card';
 
-function Main({ cards, handleAddPlaceClick, handleEditAvatarClick, handleEditProfileClick, handleCardClick, handleCardLike, handleCardDelete }) {
+function Main({ cards, handleAddPlaceClick, handleEditAvatarClick, handleEditProfileClick, handleCardClick, handleCardLike, openCardDelete, setCurrentDeleteId }) {
     const userInfo = React.useContext(CurrentUserContext);
 
     return (
@@ -33,7 +33,8 @@ function Main({ cards, handleAddPlaceClick, handleEditAvatarClick, handleEditPro
                         key={card._id}
                         handleCardClick={handleCardClick}
                         onCardLike={handleCardLike}
-                        onCardDelete={handleCardDelete}
+                        openCardDelete={openCardDelete}
+                        setCurrentDeleteId={setCurrentDeleteId}
                     />
                 })}
             </ul>

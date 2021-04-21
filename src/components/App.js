@@ -22,6 +22,7 @@ function App() {
   const [selectedCard, setSelectedCard] = React.useState({});
   const [userInfo, setUserInfo] = useUserInfo();
   const [cards, setCards] = useCards();
+  const [currentDeleteId, setCurrentDeleteId] = React.useState('');
 
   function handleCardClick(card) {
     setSelectedCard(card);
@@ -35,13 +36,6 @@ function App() {
         setCards((state) => state.map((c) => c._id === card._id ? newCard : c));
     });
   };
-
-  function handleCardDelete(card) {
-    api.removeCard(card._id).then(() => {
-      const newList = cards.filter((c) => c._id !== card._id);
-      setCards(newList);
-    });
-  };
   
   return (
     <div className="page">
@@ -53,10 +47,11 @@ function App() {
               cards={cards}
               handleCardClick={handleCardClick}
               handleCardLike={handleCardLike}
-              handleCardDelete={handleCardDelete}
+              openCardDelete={() => setIsRemoveCardPopupOpen(true)}
               handleEditAvatarClick={() => setIsEditAvatarPopupOpen(true)}
               handleAddPlaceClick={() => setIsAddPlacePopupOpen(true)}
               handleEditProfileClick={() => setIsEditProfilePopupOpen(true)}
+              setCurrentDeleteId={setCurrentDeleteId}
             />
             <AvatarPopup
               isOpen={isEditAvatarPopupOpen}
@@ -83,6 +78,9 @@ function App() {
             <RemoveCardPopup
               isOpen={isRemoveCardPopupOpen}
               onClose={() => setIsRemoveCardPopupOpen(false)}
+              cards={cards}
+              setCards={setCards}
+              currentDeleteId={currentDeleteId}
             />
           </CurrentUserContext.Provider>
         </Route>

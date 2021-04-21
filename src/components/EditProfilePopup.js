@@ -3,7 +3,8 @@ import { api } from '../utils/api';
 import PopupWithForm from './PopupWithForm';
 
 function EditProfilePopup({ isOpen, onClose, userInfo, setUserInfo }) {
-    const [inputs, setInputs] = React.useState({ name: userInfo.name, subtitle: userInfo.about })
+    const [inputs, setInputs] = React.useState({ name: userInfo.name, subtitle: userInfo.about });
+    const [isLoading, setIsLoading] = React.useState(false);
 
     function handleInputChange(evt) {
         setInputs({
@@ -14,11 +15,13 @@ function EditProfilePopup({ isOpen, onClose, userInfo, setUserInfo }) {
     
       function handleFormSubmit(evt) {
         evt.preventDefault();
+        setIsLoading(true);
     
         api.updateUserInfo(inputs.name, inputs.subtitle)
         .then(res => {
           setUserInfo(res);
           onClose();
+          setIsLoading(false);
         });
       }
 
@@ -27,7 +30,7 @@ function EditProfilePopup({ isOpen, onClose, userInfo, setUserInfo }) {
             isOpen={isOpen}
             onClose={onClose}
             title='Edit profile'
-            submitName='Save'
+            submitName={isLoading ? 'Saving...' : 'Save'}
             onSubmit={handleFormSubmit}
         >
             <input

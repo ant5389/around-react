@@ -4,6 +4,7 @@ import PopupWithForm from './PopupWithForm';
 
 function AddCardPopup({ isOpen, onClose, cards, setCards }) {
     const [inputs, setInputs] = React.useState({ name: '', link: ''});
+    const [isLoading, setIsLoading] = React.useState(false);
 
     function handleInputChange(evt) {
         setInputs({
@@ -14,11 +15,13 @@ function AddCardPopup({ isOpen, onClose, cards, setCards }) {
     
     function handleFormSubmit(evt) {
         evt.preventDefault();
+        setIsLoading(true);
 
         api.addCard(inputs.name, inputs.link).then(newCard => {
             setCards([newCard, ...cards]);
             setInputs({ name: '', link: ''});
             onClose();
+            setIsLoading(false);
         });
     }
 
@@ -28,7 +31,7 @@ function AddCardPopup({ isOpen, onClose, cards, setCards }) {
             onClose={onClose}
             onSubmit={handleFormSubmit}
             title='New Place'
-            submitName='Create'
+            submitName={isLoading ? 'Saving...' : 'Create'}
         >
             <input
                 id='titleInput'

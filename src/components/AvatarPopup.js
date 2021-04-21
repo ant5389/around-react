@@ -4,6 +4,7 @@ import PopupWithForm from './PopupWithForm';
 
 function AvatarPopup({ isOpen, onClose, setUserInfo }) {
     const [input, setInput] = React.useState('');
+    const [isLoading, setIsLoading] = React.useState(false);
 
     function handleInputChange(evt) {
         setInput(evt.target.value);
@@ -11,11 +12,13 @@ function AvatarPopup({ isOpen, onClose, setUserInfo }) {
 
     function handleFormSubmit(evt) {
         evt.preventDefault();
+        setIsLoading(true);
 
         api.setUserAvatar(input).then(res => {
             setUserInfo(res);
             setInput('');
             onClose();
+            setIsLoading(false);
         })
     }
 
@@ -25,7 +28,7 @@ function AvatarPopup({ isOpen, onClose, setUserInfo }) {
             onClose={onClose}
             onSubmit={handleFormSubmit}
             title='Change profile picture'
-            submitName='Save'
+            submitName={isLoading ? 'Saving...' : 'Save'}
         >
             <input
                 id="avatarInput"
