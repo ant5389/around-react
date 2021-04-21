@@ -2,20 +2,20 @@ import React from 'react';
 import { CurrentUserContext } from '../contexts/CurrentUserContext';
 
 export default function Card({ card, handleCardClick, onCardLike, onCardDelete }) {
-    const [userInfo] = React.useContext(CurrentUserContext);
+    const userInfo = React.useContext(CurrentUserContext);
     const isOwn = card.owner._id === userInfo._id;
     const isLiked = card.likes.some(i => i._id === userInfo._id);
 
     const cardLikeButtonClassName = (
         `places__like-btn ${isLiked ? 'places__like-btn_active' : null}`
-      ); 
+      );
 
     function handleClick() {
         handleCardClick(card)
     }
 
     function handleLikeClick() {
-        onCardLike(card)
+        onCardLike(card);
     }
 
     function handleDeleteClick() {

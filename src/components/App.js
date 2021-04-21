@@ -20,7 +20,7 @@ function App() {
   const [isRemoveCardPopupOpen, setIsRemoveCardPopupOpen] = React.useState(false);
   const [isImageOpen, setIsImageOpen] = React.useState(false);
   const [selectedCard, setSelectedCard] = React.useState({});
-  const userInfo = useUserInfo();
+  const [userInfo, setUserInfo] = useUserInfo();
   const [cards, setCards] = useCards();
 
   function handleCardClick(card) {
@@ -28,9 +28,20 @@ function App() {
     setIsImageOpen(true);
   };
 
-  function handleUpdateUser() {
-    api.setUserInfo();
-  }
+  function handleCardLike(card) {
+    const isLiked = card.likes.some(i => i._id === userInfo._id);
+        
+    api.changeLikeCardStatus(card._id, isLiked).then((newCard) => {
+        setCards((state) => state.map((c) => c._id === card._id ? newCard : c));
+    });
+  };
+
+  function handleCardDelete(card) {
+    api.removeCard(card._id).then(() => {
+      const newList = cards.filter((c) => c._id !== card._id);
+      setCards(newList);
+    });
+  };
   
   return (
     <div className="page">
@@ -41,6 +52,8 @@ function App() {
             <Main
               cards={cards}
               handleCardClick={handleCardClick}
+              handleCardLike={handleCardLike}
+              handleCardDelete={handleCardDelete}
               handleEditAvatarClick={() => setIsEditAvatarPopupOpen(true)}
               handleAddPlaceClick={() => setIsAddPlacePopupOpen(true)}
               handleEditProfileClick={() => setIsEditProfilePopupOpen(true)}
@@ -48,15 +61,19 @@ function App() {
             <AvatarPopup
               isOpen={isEditAvatarPopupOpen}
               onClose={() => setIsEditAvatarPopupOpen(false)}
+              setUserInfo={setUserInfo}
             />
             <EditProfilePopup
               isOpen={isEditProfilePopupOpen}
               onClose={() => setIsEditProfilePopupOpen(false)}
-              onUpdateUser={handleUpdateUser}
+              userInfo={userInfo}
+              setUserInfo={setUserInfo}
             />
             <AddCardPopup
               isOpen={isAddPlacePopupOpen}
               onClose={() => setIsAddPlacePopupOpen(false)}
+              cards={cards}
+              setCards={setCards}
             />
             <ImagePopup
               isOpen={isImageOpen}

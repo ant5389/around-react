@@ -1,33 +1,26 @@
 import React from 'react';
-import { CurrentUserContext } from '../contexts/CurrentUserContext';
+import { api } from '../utils/api';
 import PopupWithForm from './PopupWithForm';
 
-function EditProfilePopup({ isOpen, onClose, onUpdateUser }) {
-    const userInfo = React.useContext(CurrentUserContext);
-    const [name, setName] = React.useState('');
-    const [subtitle, setSubtitle] = React.useState('');
+function EditProfilePopup({ isOpen, onClose, userInfo, setUserInfo }) {
+    const [inputs, setInputs] = React.useState({ name: userInfo.name, subtitle: userInfo.about })
 
-    function handleName(evt) {
-        setName(evt.target.value);
-    }
-
-    function handleSubtitle(evt) {
-        setSubtitle(evt.target.value);
-    }
-
-    function handleSubmit(evt) {
+    function handleInputChange(evt) {
+        setInputs({
+          ...inputs,
+          [evt.target.name]: evt.target.value
+        });
+      }
+    
+      function handleFormSubmit(evt) {
         evt.preventDefault();
-
-        onUpdateUser({
-            name,
-            about: subtitle
-        })
-    }
-
-    React.useEffect(() => {
-        setName(userInfo.name);
-        setSubtitle(userInfo.about);
-      }, [userInfo]);
+    
+        api.updateUserInfo(inputs.name, inputs.subtitle)
+        .then(res => {
+          setUserInfo(res);
+          onClose();
+        });
+      }
 
     return (
         <PopupWithForm
@@ -35,15 +28,16 @@ function EditProfilePopup({ isOpen, onClose, onUpdateUser }) {
             onClose={onClose}
             title='Edit profile'
             submitName='Save'
-            onSubmit={handleSubmit}
+            onSubmit={handleFormSubmit}
         >
             <input
                 id='nameInput'
                 type='text'
                 className='popup__field'
                 placeholder='Name'
-                name={name}
-                onChange={handleName}
+                name='name'
+                onChange={handleInputChange}
+                value={inputs.name}
                 minLength='2'
                 maxLength='40'
                 required
@@ -57,8 +51,9 @@ function EditProfilePopup({ isOpen, onClose, onUpdateUser }) {
                 type='text'
                 className='popup__field'
                 placeholder='About'
-                name={subtitle}
-                onChange={handleSubtitle}
+                name='subtitle'
+                onChange={handleInputChange}
+                value={inputs.subtitle}
                 minLength='2'
                 maxLength='200'
                 required
