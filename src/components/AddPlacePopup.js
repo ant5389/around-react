@@ -2,7 +2,7 @@ import React from 'react';
 import { api } from '../utils/api';
 import PopupWithForm from './PopupWithForm';
 
-function AddCardPopup({ isOpen, onClose, cards, setCards }) {
+function AddPlacePopup({ isOpen, onClose, cards, setCards }) {
     const [inputs, setInputs] = React.useState({ name: '', link: ''});
     const [isLoading, setIsLoading] = React.useState(false);
 
@@ -67,4 +67,4 @@ function AddCardPopup({ isOpen, onClose, cards, setCards }) {
     );
 }
 
-export default AddCardPopup;
+export default AddPlacePopup;

@@ -11,9 +11,9 @@ function EditProfilePopup({ isOpen, onClose, userInfo, setUserInfo }) {
           ...inputs,
           [evt.target.name]: evt.target.value
         });
-      }
+    }
     
-      function handleFormSubmit(evt) {
+    function handleFormSubmit(evt) {
         evt.preventDefault();
         setIsLoading(true);
     
@@ -23,7 +23,7 @@ function EditProfilePopup({ isOpen, onClose, userInfo, setUserInfo }) {
           onClose();
           setIsLoading(false);
         });
-      }
+    }
 
     return (
         <PopupWithForm

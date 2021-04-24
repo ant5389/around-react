@@ -1,5 +1,4 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
 import { CurrentUserContext } from '../contexts/CurrentUserContext';
 import { api } from '../utils/api';
 import { useUserInfo, useCards } from '../utils/utils';
@@ -7,10 +6,10 @@ import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
 import ImagePopup from './ImagePopup';
-import AvatarPopup from './AvatarPopup';
+import EditAvatarPopup from './EditAvatarPopup';
 import RemoveCardPopup from './RemoveCardPopup';
 import EditProfilePopup from './EditProfilePopup';
-import AddCardPopup from './AddCardPopup';
+import AddPlacePopup from './AddPlacePopup';
 
 function App() {
 
@@ -40,51 +39,47 @@ function App() {
   return (
     <div className="page">
       <Header />
-      <Switch>
-        <Route path='/' exact>
-          <CurrentUserContext.Provider value={userInfo}>
-            <Main
-              cards={cards}
-              handleCardClick={handleCardClick}
-              handleCardLike={handleCardLike}
-              openCardDelete={() => setIsRemoveCardPopupOpen(true)}
-              handleEditAvatarClick={() => setIsEditAvatarPopupOpen(true)}
-              handleAddPlaceClick={() => setIsAddPlacePopupOpen(true)}
-              handleEditProfileClick={() => setIsEditProfilePopupOpen(true)}
-              setCurrentDeleteId={setCurrentDeleteId}
-            />
-            <AvatarPopup
-              isOpen={isEditAvatarPopupOpen}
-              onClose={() => setIsEditAvatarPopupOpen(false)}
-              setUserInfo={setUserInfo}
-            />
-            <EditProfilePopup
-              isOpen={isEditProfilePopupOpen}
-              onClose={() => setIsEditProfilePopupOpen(false)}
-              userInfo={userInfo}
-              setUserInfo={setUserInfo}
-            />
-            <AddCardPopup
-              isOpen={isAddPlacePopupOpen}
-              onClose={() => setIsAddPlacePopupOpen(false)}
-              cards={cards}
-              setCards={setCards}
-            />
-            <ImagePopup
-              isOpen={isImageOpen}
-              onClose={() => setIsImageOpen(false)}
-              card={selectedCard}
-            />
-            <RemoveCardPopup
-              isOpen={isRemoveCardPopupOpen}
-              onClose={() => setIsRemoveCardPopupOpen(false)}
-              cards={cards}
-              setCards={setCards}
-              currentDeleteId={currentDeleteId}
-            />
-          </CurrentUserContext.Provider>
-        </Route>
-      </Switch>
+        <CurrentUserContext.Provider value={userInfo}>
+          <Main
+            cards={cards}
+            handleCardClick={handleCardClick}
+            handleCardLike={handleCardLike}
+            openCardDelete={() => setIsRemoveCardPopupOpen(true)}
+            handleEditAvatarClick={() => setIsEditAvatarPopupOpen(true)}
+            handleAddPlaceClick={() => setIsAddPlacePopupOpen(true)}
+            handleEditProfileClick={() => setIsEditProfilePopupOpen(true)}
+            setCurrentDeleteId={setCurrentDeleteId}
+          />
+          <EditAvatarPopup
+            isOpen={isEditAvatarPopupOpen}
+            onClose={() => setIsEditAvatarPopupOpen(false)}
+            setUserInfo={setUserInfo}
+          />
+          <EditProfilePopup
+            isOpen={isEditProfilePopupOpen}
+            onClose={() => setIsEditProfilePopupOpen(false)}
+            userInfo={userInfo}
+            setUserInfo={setUserInfo}
+          />
+          <AddPlacePopup
+            isOpen={isAddPlacePopupOpen}
+            onClose={() => setIsAddPlacePopupOpen(false)}
+            cards={cards}
+            setCards={setCards}
+          />
+          <ImagePopup
+            isOpen={isImageOpen}
+            onClose={() => setIsImageOpen(false)}
+            card={selectedCard}
+          />
+          <RemoveCardPopup
+            isOpen={isRemoveCardPopupOpen}
+            onClose={() => setIsRemoveCardPopupOpen(false)}
+            cards={cards}
+            setCards={setCards}
+            currentDeleteId={currentDeleteId}
+          />
+        </CurrentUserContext.Provider>
       <Footer />
     </div>
     );

@@ -2,7 +2,7 @@ import React from 'react';
 import { api } from '../utils/api';
 import PopupWithForm from './PopupWithForm';
 
-function AvatarPopup({ isOpen, onClose, setUserInfo }) {
+function EditAvatarPopup({ isOpen, onClose, setUserInfo }) {
     const [input, setInput] = React.useState('');
     const [isLoading, setIsLoading] = React.useState(false);
 
@@ -44,4 +44,4 @@ function AvatarPopup({ isOpen, onClose, setUserInfo }) {
     );
 }
 
-export default AvatarPopup;
+export default EditAvatarPopup;
